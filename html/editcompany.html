@@ -1,3 +1,12 @@
+
+
+
+
+<!-- 公司，edit -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Jobster Company Homepage</title>
+    <title>Jobster Company Edit</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,16 +22,17 @@
     <style>
 
         #topContainer{
-            background-image: url("images/companyback.jpg");
+            background-image: url("images/companybackground.jpg");
             height:975px;
             width:100%;
             background-size:cover;
+
         }
 
-        #registerRow{
-            margin-top:200px;
+        #informationRow{
+            margin-top:100px;
         }
-        #registerform{
+        #informationform{
             margin-top:20px;
         }
 
@@ -48,45 +58,39 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-		
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarlink">
             <ul class="nav navbar-nav ">
-				<li><a href="index.html">Students</a></li>
-                <li class="active"><a href="indexcompany.html">Companies<span class="sr-only">(current)</span></a></li>
-				<li><a href="about.html">About</a></li>
-                <li><a href="Developer.html">Developer</a></li>
+                <li class="active"><a href="companyhome.html">Company Homepage<span class="sr-only">(current)</span></a></li>
+                <li><a href="jobspost.html">Jobs</a></li>
+				<li><a href="companymessagepage.html">Messages</a></li>
+                <li><a href="studentsearch.html">Students</a></li>
             </ul>
-			
-            <form class="navbar-form navbar-right" method="post">
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Company Email" name="logincompanyemail"/>
-                </div>
 
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" name="logincompanypassword"/>
-                </div>
-                <input type="submit" class="btn btn-success" name="submit" value="Log in"/>
+            <form class="navbar-form navbar-right" action="indexcompany.html" method="post">
+
+			
+				<!-- 这个地方需要一个echo 显示出用户名 -->
+
+				
+			<input type="submit" class="btn btn-success" name="submit" value="Log out"/> <!-- 这地方直接退出登录了 返回主界面 -->
             </form>
 
         </div>
     </div>
 </nav>
 
-<div class="container" id="topContainer">
-    <div class="row" id="registerRow">
-        <div class="col-md-4 col-md-offset-1 whiteBackground" id="registerform">
-		<h1> Company Register</h1>
-            <form method="post">
 
-                <div class="form-group">
+<div class="container" id="topContainer">
+    <div class="row" id="informationRow">
+        <div class="col-md-4 col-md-offset-1 whiteBackground" id="informationform">
+
+			<form method="post">
+			
+				<div class="form-group">
                     <label for="registercompanyname">Company Name:</label>
                     <input type="text" class="form-control" placeholder="Company Name" name="registercompanyname" id="registercompanyname"/>
-                </div>
-
-                <div class="form-group">
-                    <label for="registercompanyemail">Email:(You will use it as login account)</label>
-                    <input type="email" class="form-control" placeholder="Email" name="registercompanyemail" id="registercompanyemail"/>
                 </div>
 
                 <div class="form-group">
@@ -104,14 +108,16 @@
                     <input type="text" class="form-control" placeholder="Company Industry" name="registercompanyindustry" id="registercompanyindustry"/>
                 </div>
 				
-                <input type="submit" class="btn btn-success" name="submit" value="Sign up"/>
-
-            </form>
-
+				<div class="form-group">
+                    <label for="registercompanydes">Company Industry:</label>
+                    <input type="text" class="form-control" placeholder="Company Description" name="registercompanydes" id="registercompanydes"/>
+                </div>
+				
+				<input type="submit" class="btn btn-success" name="submit" value="Submit"/>
+			</form>
         </div>
     </div>
-</div>
+</div> 
 
 </body>
 </html>
-
