@@ -24,7 +24,7 @@
         #topContainer{
             background-image: url("images/background.jpg");
             height:975px;
-            width:100%;
+            width:200%;
             background-size:cover;
 
         }
@@ -86,10 +86,21 @@
     <div class="row" id="informationRow">
         <div class="col-md-4 col-md-offset-1 whiteBackground" id="informationform">
 			
+			<form method = "post">
+			<h4>This is a friend request！
+			<input type="submit" class="btn btn-success" name="submit" value="Accept"/>
+			<input type="submit" class="btn btn-success" name="submit" value="Refuse"/>
+			</h4>
+			</form>
 			
-			<!-- 输出所有message-->
 			
-			
+			<form method = "post">
+			<h4>This is a job notification！
+			<input type="submit" class="btn btn-success" name="submit" value="Apply"/>
+			<input type="submit" class="btn btn-success" name="submit" value="Ignore"/>
+			</h4>
+			</form>
+			<!-- 输出所有message-->			
 			
         </div>
     </div>

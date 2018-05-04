@@ -35,6 +35,11 @@
         #informationform{
             margin-top:20px;
         }
+		
+		#resultform{
+			margin-top:-250px;
+			margin-left:1000px;
+		}
 
         .whiteBackground{
             margin-right:10px;
@@ -92,6 +97,22 @@
                 </div>
 
 				<input type="submit" class="btn btn-success" name="submit" value="Search"/>
+			</form>
+        </div>
+    </div>
+	
+	<div class="row" id="informationRow">
+        <div class="col-md-4 col-md-offset-1 whiteBackground" id="resultform">
+			<form method="post">
+				<h3>Job name
+				<input type="submit" class="btn btn-success" name="submit" value="Apply"/>
+				<input type="submit" class="btn btn-success" name="submit" value="Forward"/>
+				</h3>
+			</form>
+			<form method="post">
+				<h3>Company name
+				<input type="submit" class="btn btn-success" name="submit" value="Follow"/>
+				</h3>
 			</form>
 		<!-- 显示结果分两个区域吧 一个是company 带关键字的 另一个是job带关键字的-->
         </div>
