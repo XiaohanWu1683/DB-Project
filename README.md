@@ -6,7 +6,7 @@ Final project is in the zip file.
 
 A database-backed website which is similar to LinkedIn Jun. 2018
 
-Designed and decorated a web application with HTML, CSS, JavaScript and BootStrap framework;
+Designed and decorated a web application with HTML, CSS, JavaScript and BootStrap framework;
 
  Implemented RESTful APIs for website services and AJAX for data cleaning and transformation;
 
